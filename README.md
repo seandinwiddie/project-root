@@ -1,16 +1,16 @@
 # project-root
  wip
 
-[description](https://github.com/seandinwiddie/root/READMEs/description.md)
-[usage](https://github.com/seandinwiddie/root/READMEs/usage.md)
-[installation](https://github.com/seandinwiddie/root/READMEs/installation.md)
-[setup](https://github.com/seandinwiddie/root/READMEs/setup.md)
-[architecture](https://github.com/seandinwiddie/root/READMEs/architecture.md)
+[description](https://github.com/seandinwiddie/project-root/READMEs/description.md)
+[usage](https://github.com/seandinwiddie/project-root/READMEs/usage.md)
+[installation](https://github.com/seandinwiddie/project-root/READMEs/installation.md)
+[setup](https://github.com/seandinwiddie/project-root/READMEs/setup.md)
+[architecture](https://github.com/seandinwiddie/project-root/READMEs/architecture.md)
 
 
 ## Macro overview of the Directory Structure
 ```
-root/
+project-root/
   ├── README.md
   ├── favicon.ico
   ├── index.html

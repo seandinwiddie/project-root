@@ -12,7 +12,7 @@ Each file is responsible for a specific part of the application, making it easy 
 
 ## Directory Structure
 ```
-root/
+project-root/
   ├── README.md
   ├── favicon.ico
   ├── index.html
@@ -73,44 +73,6 @@ Contains the `render` function that renders the `App` component to the DOM
 renders the top-level React component
 
 renders the App component into the root element in the index.html file
-
-#### reducers.js
-
-Contains the Redux reducers for updating the character's name, race, and class.
-
-This file exports a reducer function that updates the state of the application in response to dispatched actions.
-
-#### actions.js
-
-This file exports actions.
-
-#### actionTypes.js
-
-This file exports action types and creators.
-
-Contains the action types used in the Redux store.
-
-constants.js is for later
-
-#### character.js
-
-This file exports a React component of the character creation form.
-
-Contains the `Character` component of the form for creating a new character.
-
-The file contains the definition of the `Character` component, which represents the DnD character being created.
-
-#### other component files
-
-The `step.js` file contains the definition of the `Step` component, which represents a step in the character creation process.
-
-- gender.js: This file exports a React component that renders the gender selection form.
-
-- class.js: This file exports a React component that renders the class selection form.
-
-- race.js: This file exports a React component that renders the race selection form.
-
-- stats.js: This file exports a React component that renders the ability scores form.
 
 #### other js files
 

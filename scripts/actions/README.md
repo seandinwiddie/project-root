@@ -1,3 +1,7 @@
+#### `actions/`
+
+This directory contains the Redux action creators used by the application. Action creators are functions that create actions, which are dispatched to the reducers to update the application state.
+
 #### actions.js
 
 This file exports actions.

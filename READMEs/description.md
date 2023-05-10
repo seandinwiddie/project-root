@@ -38,7 +38,7 @@ also new paradigms and mindsets and traditions
 
 the story campaigns will incorporate ritual and visionary "magic" with intention and catalyst-guided mediations played out as gameplay mechanics including Vision Questing, Defining(discovering) Intent and Catalyst, Initiating Transition, ritual Practices, pathworking, astral projection, etc
 
-### backlog: native apps
+##### backlog: native apps
 
 react-native / expo go planned for the future
 
@@ -47,3 +47,21 @@ React Native and React are not fully compatible, as the syntax and functionality
 While both use similar components and JSX syntax, React Native compiles to native mobile app components, while React compiles to HTML components for the web
 
 However, there is a compatibility layer called React Native for Web that allows developers to use React Native code in web applications using React DOM
+
+##### backlog: moduales: core rules and pdf reports
+
+addon modules will be developed for
+
+world of darkness dark ages
+
+world of darkness
+
+chonicles of darkness
+
+consulting accelerator
+
+mind movies
+
+other mindset courses and ttrpg rulesets
+
+also report genaration of things like charaters and adventure logs and mindset discovery

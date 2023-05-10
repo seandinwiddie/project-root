@@ -26,6 +26,7 @@ project-root/
   │   ├── usage.md
   │   ├── installation.md
   │   ├── architecture.md
+  │   ├── troubleshooting.md
   │   └── setup.md
   ├── scripts/
   │   ├── README.md
@@ -63,31 +64,39 @@ project-root/
 
 ### HTML file
 
-- index.html: This file includes CDN links to React, Redux and Babel. It also includes a script tag that links to app.js and sets the type attribute to text/babel.
+- index.html: This file includes CDN links to React, Redux and Babel
 
-The `index.html` file serves as the entry point of the application and should include CDN links to Redux, React, and Babel. The `app.js` file is included as a script tag with the `type` attribute set to `text/babel`.
-- `index.html`: The main HTML file for the application that includes the necessary CDN links for Redux, React, and Babel. It also has a script tag that includes `index.js` using the `text/babel` type.
+It also includes a script tag that links to app.js and sets the type attribute to text/babel.
+
+The `index.html` file serves as the entry point of the application and should include CDN links to Redux, React, and Babel
+
+The `app.js` file is included as a script tag with the `type` attribute set to `text/babel`
+
+- `index.html`: The main HTML file for the application that includes the necessary CDN links for Redux, React, and Babel
+
+It also has a script tag that includes `app.js` using the `text/babel` type
 
 ### Script files
 
 #### `app.js`
-
-The main JavaScript file for the application. It sets up the Redux store, renders the top-level React component (`App`), and mounts it to the DOM. This file depends on other files located in the `reducers/`, `actions/`, and `components/` directories.
+defines the top-level React component
+The "main" script file for the application
 
 #### store.js
 
 sets up the Redux store
 
-It depends on the `character.js` and `step.js` files located in the `components/` directory.
-
 #### render.js
-
-Contains the `render` function that renders the `App` component to the DOM
 
 renders the top-level React component
 
-renders the App component into the root element in the index.html file
+#### other script files
 
-#### other js files
-
-for later
+- [reducers](https://github.com/seandinwiddie/project-root/scripts
+/reducers/README.md)
+- [components](https://github.com/seandinwiddie/project-root/scripts
+/components/README.md)
+- [actionTypes](https://github.com/seandinwiddie/project-root/scripts
+/actionTypes/README.md)
+- [actions](https://github.com/seandinwiddie/project-root/scripts
+/actions/README.md)

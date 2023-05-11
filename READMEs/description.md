@@ -15,10 +15,18 @@ babel( typescript maybe later )
 yet undefined ui kit or a command-line, terminal-style emulator
 React Native w/ Expo go ( for native apps )
 React Native for Web or equivalent
+react router
+react-native-terminal
+
+##### CDNs for MVP
+
+The `index.html` file serves as the entry point of the application and should include CDN links to Redux, React, and Babel
+
+It also has a script tag that includes `app.js` using the `text/babel` type
 
 ## roadmap
 
-the next step is to adjust the user interface, user experience, and application flow.
+the next step is to adjust the user interface, user experience, and application flow
 
 the interface will be a command-line, terminal, prompt style.
 
@@ -36,7 +44,7 @@ examples of skills to be taught would be new languages and that sort of thing
 
 also new paradigms and mindsets and traditions
 
-the story campaigns will incorporate ritual and visionary "magic" with intention and catalyst-guided mediations played out as gameplay mechanics including Vision Questing, Defining(discovering) Intent and Catalyst, Initiating Transition, ritual Practices, pathworking, astral projection, etc
+the story campaigns will incorporate ritual and visionary "magic" with intention and catalyst-guided mediations played out as gameplay mechanics including Vision Questing, Defining(discovering) Intent and Catalyst, Initiating Transition, ritual Practices, tarot, pathworking, astral projection, divination, etc
 
 ##### backlog: native apps
 
@@ -48,7 +56,9 @@ While both use similar components and JSX syntax, React Native compiles to nativ
 
 However, there is a compatibility layer called React Native for Web that allows developers to use React Native code in web applications using React DOM
 
-##### backlog: moduales: core rules and pdf reports
+##### backlog: migrate from babel to typescript
+
+##### backlog: modules: core rules and pdf reports
 
 addon modules will be developed for
 
@@ -56,12 +66,14 @@ world of darkness dark ages
 
 world of darkness
 
-chonicles of darkness
+chronicles of darkness
 
 consulting accelerator
 
 mind movies
 
+quareia
+
 other mindset courses and ttrpg rulesets
 
-also report genaration of things like charaters and adventure logs and mindset discovery
+also report generation of things like characters and adventure logs and mindset discovery

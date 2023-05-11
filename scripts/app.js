@@ -1,34 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Terminal from 'react-native-terminal';
-import store from './store';
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+import rootReducer from './reducers';
 
-import SampleModule from './modules/sample/components';
+// create store with thunk middleware
+const store = createStore(rootReducer, applyMiddleware(thunk));
 
-const App = () => {
+function App() {
   return (
-    <Provider store={store}>
-      <BrowserRouter>
-        <Switch>
-          <Route path="/sample">
-            <SampleModule />
-          </Route>
-          <Route path="/">
-            <Terminal
-              greeting="Which module would you like to select?"
-              commands={{
-                'sample': () => {
-                  window.location = '/sample';
-                }
-              }}
-            />
-          </Route>
-        </Switch>
-      </BrowserRouter>
-    </Provider>
+    <div>
+      <h1>Command Line App</h1>
+      <div className="terminal">
+        <div className="terminal-header">Terminal</div>
+        <div className="terminal-body">
+          <div className="terminal-prompt">$</div>
+          <input className="terminal-input" type="text" placeholder="Enter command here" />
+        </div>
+      </div>
+    </div>
   );
-};
+}
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+);

@@ -1,10 +1,9 @@
-import { createStore, combineReducers } from 'redux';
-import sampleReducer from './modules/sample/reducers';
+import { combineReducers } from 'redux';
+
+// add reducers here
 
 const rootReducer = combineReducers({
-  sample: sampleReducer,
+  // add reducers here
 });
 
-const store = createStore(rootReducer);
-
-export default store;
+export default rootReducer;

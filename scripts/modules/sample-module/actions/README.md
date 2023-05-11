@@ -32,4 +32,4 @@ This action creator updates the ability scores of the character being created. I
 
 This action creator updates the current step in the character creation process. It takes a number `step` as its argument and returns an action object with type `UPDATE_STEP` and a payload of `step`.
 
-Note: The above actions are used by the reducers in the `scripts/reducers` directory to update the state of the application.
+Note: The above actions are used by the reducers in the `scripts/modules/[module-name]/reducers` directory to update the state of the application.

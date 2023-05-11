@@ -1,0 +1,42 @@
+{
+  "name": "project-root",
+  "version": "0.1.0",
+  "description": "A web application that provides a terminal, command-line, text-prompt style UI/UX for courses and games.",
+  "main": "app.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "build": "expo build:web"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seandinwiddie/project-root.git"
+  },
+  "keywords": [
+    "MUDs"
+  ],
+  "author": "seandinwiddie",
+  "bugs": {
+    "url": "https://github.com/seandinwiddie/project-root/issues"
+  },
+  "homepage": "https://github.com/seandinwiddie/project-root#readme",
+  "dependencies": {
+    "expo": "^42.0.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-native": "^0.64.2",
+    "react-native-web": "^0.13.18",
+    "react-redux": "^7.2.9",
+    "redux": "^4.2.1",
+    "redux-thunk": "^2.4.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^9.1.2",
+    "expo-cli": "^4.11.0"
+  }
+}

@@ -1,4 +1,4 @@
-# Code name: Project Root
+# Code name: Project Rooted
 
 # description
 This is a web application that allows users to use a terminal-style command-line user interface to load modules of courses and games
@@ -14,14 +14,13 @@ And React to render the application
 - 📱 Expo Go for the application
 - react native web
 - 🌐 Redux.js for the state
-- 🎨 React Native Elements for command-line style UI
-- React Router
+- typescript
 - React
 
 
 ## Development Process 🧑‍💻
 
-- Develop a detailed plan for MVP, focusing on core mechanics and features of the system, including the CRGE, command line UI built using React Native Elements., and interactive tutorial 📈
+- Develop a detailed plan for MVP, focusing on core mechanics and features of the system, including the CRGE, command line UI to be built and interactive tutorial 📈
 - Create a flat file database schema and API endpoints that support the core gameplay mechanics and user interface features 
 - Develop a command line UI that allows users to interact w/ the system world, use the CRGE, and engage w/ the various NPCs, as well as an interactive tutorial that teaches new users the mechanics of the system and  that looks like a command prompt or terminal, and handles user input using the TextInput component and is stylied using properties to make the TextInput look like a command prompt
 - Test the MVP and gather feedback from users to identify areas that need improvement or additional features
@@ -134,8 +133,6 @@ When the user navigates to one of these routes, the corresponding module will be
 
 the interface will be a command-line, terminal, prompt style and handles user input
 
-it will be styled using React Native Elements
-
 there will be a series of questions and guidance and interactivity via user-typed commands that will feel very similar if not almost exactly the same as playing MUDs
 
 the landing page terminal will start with the question "Which module would you like to select?"
@@ -148,32 +145,37 @@ directory structure and a brief explanation of each file
 
 ```
 project-root/
-  ├── README.md
-  ├── favicon.ico
-  ├── package.json
-  ├── webpack.config.js
-  └── styles/
-  │   ├── README.md
-  │   └── style.css
-  └── scripts/
-       ├── README.md
-       ├── app.js
-       ├── store.js
-       └── modules/
-            ├── README.md
-            └── sample-module/
-                 ├── actions/
-                 │   ├── README.md
-                 │   └── *.js
-                 ├── actionTypes/
-                 │   ├── README.md
-                 │   └── *.js
-                 ├── components/
-                 │   ├── README.md
-                 │   └── *.js
-                 └── reducers/
-                      ├── README.md
-                      └── *.js
+  ├ README.md
+  ├ favicon.ico
+  ├ package.json
+  ├ tsconfig.json
+  ├ app.json
+  ├ App.tsx
+  ├ babel.config.js
+  └ styles/
+  │├ README.md
+  │└ style.css
+  └ assets/
+  │├ icon.png
+  │└ splash.png
+  └ scripts/
+    ├ README.md
+    ├ store.tsx
+    └ modules/
+      ├ README.md
+      └ sample-module/
+        ├ components/
+        │├ README.md
+        │└ *.tsx
+        └ reducers/
+          │├ README.md
+          │└ *.tsx
+          └ actions/
+            ├ README.md
+            └ *.tsx
+              └ actionTypes/
+                ├ README.md
+                └ *.tsx
 ```
 
 - `root/`: A directory that contains the public files used by the web application
@@ -189,22 +191,28 @@ project-root/
 - `components/`: A directory that contains the React components used by the application.
 - `styles/`: A directory that contains the CSS styles used by the application.
 
-#### `app.js`
+#### `App.tsx`
 defines and renders the top-level React component
 The "main" script file for the application
 
-#### store.js
+#### store.tsx
 
 sets up and manages the Redux store
 
 ## Installation and setup
-1. You can clone the repository to your local machine by running `git clone https://github.com/seandinwiddie/project-root.git` in your terminal. This will create a copy of the project on your computer.
-2. Navigate to the project directory by running `cd project-root`. This will move you into the root directory of the project.
-3. Install the project dependencies by running `npm install` in your terminal. This will download and install the required packages and libraries for the project to function properly.
-4. Install Expo CLI globally on your machine by running `npm install -g expo-cli` in your terminal. This will allow you to use the Expo CLI command globally on your machine.
-5. Run the application by running `expo start` in your terminal. This will start the development server and launch the project in a web browser or simulator.
+- You can clone the repository to your local machine by running `git clone https://github.com/seandinwiddie/project-root.git` in your terminal. This will create a copy of the project on your computer.
 
-If you encounter any issues while installing or running the application, please refer to the project-root/READMEs/troubleshooting.md file for solutions to common problems.
+- Install Expo CLI globally on your machine by running `npm install -g expo-cli` in your terminal. This will allow you to use the Expo CLI command globally on your machine.
+
+Create a new Expo project by running the following command in your terminal: `expo init project-root`
+This will create a new project in a directory called my-app and install all necessary dependencies.
+
+- Navigate to the project directory by running `cd project-root`. This will move you into the root directory of the project.
+
+- Install the project dependencies by running `npm install` in your terminal. This will download and install the required packages and libraries for the project to function properly.
+
+
+- Run the application by running `expo start` in your terminal. This will start the development server and launch the project in a web browser or simulator.
 
 ## Usage
 
